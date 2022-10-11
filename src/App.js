@@ -1,9 +1,10 @@
 import './App.css';
+import Intro from './components/Intro';
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Intro />
     </div>
   );
 }
