@@ -1,6 +1,51 @@
-.intro button {
-  margin: 60px 0 0;
+.intro {
+  padding: 92px;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100%;
+  width: 50%;
+	text-align: center;
+  background-color: var(--white);
+}
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.intro-info h1 {
+  margin: 0 0 36px;
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+.intro-info h2 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.intro-info p {
+  margin: 0 0 80px;
+}
+
+.intro-info button {
   height: var(--button-big-height);
   width: var(--button-big-width);
   font-size: var(--button-big-font);
+  box-shadow: 0 4px 60px 20px var(--neon-green),
+  0 0 100px 20px var(--neon-green),
+  0 0 20px 0px var(--neon-green);
+  background-color: var(--white);
+  transition: box-shadow 0.25s, background-color 0.75s;
+}
+
+.intro-info button:hover {
+  background-color: var(--neon-green-light);
+  box-shadow: none;
 }
