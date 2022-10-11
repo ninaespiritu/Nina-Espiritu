@@ -1,0 +1,6 @@
+.intro button {
+  margin: 60px 0 0;
+  height: var(--button-big-height);
+  width: var(--button-big-width);
+  font-size: var(--button-big-font);
+}
