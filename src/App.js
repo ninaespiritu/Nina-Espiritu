@@ -1,5 +1,6 @@
 import Intro from "./components/Intro";
 import HeroImage from "./components/HeroImage";
+import About from "./components/About";
 import "./App.css";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
 			</div>
 			<div className="app-all">
 				<HeroImage />
+				<About />
 			</div>
 		</div>
 	);
