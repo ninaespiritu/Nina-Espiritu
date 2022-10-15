@@ -1,7 +1,8 @@
+import "./App.css";
 import Intro from "./components/Intro";
 import HeroImage from "./components/HeroImage";
 import About from "./components/About";
-import "./App.css";
+import Experience from "./components/Experience";
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 			<div className="app-all">
 				<HeroImage />
 				<About />
+				<Experience />
 			</div>
 		</div>
 	);
