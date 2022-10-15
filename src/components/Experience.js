@@ -6,51 +6,51 @@ const Experience = () => {
 			<div className="work">
 				<h2>Work Experience</h2>
 
-				<div className="grayce">
+				<div className="job1">
 					<h3>Technical Analyst @ GRAYCE</h3>
 					<h4>London, UK | Apr 2022 - present</h4>
 					<p>
-						I’m part of a community of emerging tech professionals,
+						I'm part of a community of emerging tech professionals,
 						working on digital transformation projects across the
 						UK. The three-year Tech+ Development Programme at Grayce
 						provides me with accredited qualifications, career
 						coaching and hands-on experience to support my
 						professional development.
 					</p>
-					<p>
-						Current Client Role: Test Analyst (Performance Testing)
+					<p className="resp">
+						<span>Current Client Role:</span> Test Analyst (Performance &amp; Integrated Testing)
 						at a multinational technology corporation
 					</p>
 					<ul>
 						<li>
 							Meeting with Architects, Test Managers, and Business
 							Analysts to understand the scope of projects and
-							identify test requirements​
+							identify test requirements
 						</li>
 						<li>
-							Planning, executing and reporting performance tests​
+							Planning, executing and reporting performance tests
 						</li>
 						<li>
 							Using testing and documentation tools (JIRA,
-							Confluence, JMeter)​
+							Confluence, JMeter)
 						</li>
-						<li>Writing detailed test cases​</li>
+						<li>Writing detailed test cases</li>
 						<li>
 							Executing test script, running automated tests, and
 							reporting defects
 						</li>
 						<li>Testing in different environments</li>
-						<li>Monitoring applications and software systems​</li>
+						<li>Monitoring applications and software systems</li>
 						<li>
 							Communicating findings to technical and
-							non-technical colleagues​
+							non-technical colleagues
 						</li>
 					</ul>
 				</div>
 
-				<div className="watch-network">
+				<div className="job2">
 					<h3>Thumbnail Designer @ WatchNetwork</h3>
-					<h4>London, UK | Nov 2022 - present</h4>
+					<h4>UK (Remote) | Nov 2022 - present</h4>
 					<p>
 						As a freelancer, I create thumbnails for the company's
 						YouTube videos whilst adhering to brand guidelines and
@@ -58,9 +58,9 @@ const Experience = () => {
 					</p>
 				</div>
 
-				<div className="flytinary">
+				<div className="job3">
 					<h3>Design and Marketing Assiociate @ Flytinary</h3>
-					<h4>London, UK | Jan 2021 - Jul 2021</h4>
+					<h4>UK (Remote) | Jan 2021 - Jul 2021</h4>
 					<p>
 						I joined the Flytinary Team in December 2020 as a
 						Graphic Design Intern and later progressed into a Design
@@ -99,13 +99,13 @@ const Experience = () => {
 					<div>
 						<h4>AgilePM® Agile Project Management Foundation</h4>
 						<p>APMG International, 2022</p>
-            <button>View Credential</button>
+						<button id="cert-agile">View Credential</button>
 					</div>
 
 					<div>
 						<h4>ISTQB® Certified Tester Foundation Level</h4>
 						<p>BCS, The Chartered Institute for IT, 2022</p>
-            <button>View Credential</button>
+						<button>View Credential</button>
 					</div>
 				</div>
 			</div>

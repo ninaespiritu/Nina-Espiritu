@@ -1,0 +1,106 @@
+.experience {
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.experience h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  letter-spacing: -0.75px;
+  line-height: var( --font-body-height);
+}
+
+.work {
+  margin: 0 0 48px;
+}
+
+.job1 {
+  padding: 0 0 24px;
+  border-bottom: 1.75px solid var(--purple);
+  transition: border-bottom 0.5s;
+}
+
+.job2, .job3 {
+  padding: 32px 0 16px;
+  border-bottom: 1.75px solid var(--purple);
+  transition: border-bottom 0.25s;
+}
+
+.job2 p, .job3 p {
+  margin: 0;
+}
+
+.job1:hover, .job2:hover, .job3:hover {
+  border-bottom: 1.75px solid var(--white);
+}
+
+.work h4 {
+  font-size: var(--font-body-size);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.work h4 {
+  margin: 0 0 28px;
+}
+
+.resp {
+  font-style: italic;
+  margin: 0;
+  color: var(--purple-light);
+}
+
+.resp span {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.work ul li {
+  margin: 0 0 0 24px;
+  font-family: var(--font-body);
+  font-size: var(--font-body-size);
+  line-height: var(--font-body-height);
+  list-style-type: disc;
+  color: var(--purple-light);
+}
+
+.certs h4 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: var( --font-body-height);
+}
+
+.certs p {
+  margin: 0 0 10px;
+  font-style: italic;
+  color: var(--purple-light);
+}
+
+.certs button {
+  height: var(--button-small-height);
+  width: var(--button-small-width);
+  font-size: var(--button-small-font);
+  font-weight: 400;
+  letter-spacing: var(--button-small-spacing);
+  border: 1.75px solid var(--white);
+  background-color: var(--purple);
+  color: var(--white);
+  transition: all 0.25s;
+}
+
+.certs button:hover {
+  font-weight: 500;
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+#cert-agile {
+  margin: 0 0 36px;
+}

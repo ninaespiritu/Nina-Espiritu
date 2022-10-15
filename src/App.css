@@ -18,11 +18,16 @@
   /* --neon-green-light: #EFFFB0; */
   --neon-green: #EAFFA7;
   --purple: #5100F1;
+  --purple-light: #C7C9FF;
 
   /* BUTTON VARIABLES */
   --button-big-height: 65px;
   --button-big-width: 205px;
   --button-big-font: 18px;
+  --button-small-height: 40px;
+  --button-small-width: 145px;
+  --button-small-font: 14px;
+  --button-small-spacing: -0.5px;
 
   /* SPACING VARIABLES */
   --padding: 92px;
@@ -32,7 +37,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--black);
 }
 
 h1, h2, h3, h4 {
@@ -68,6 +72,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
+  color: var(--black);
 }
 
 .app-intro {
