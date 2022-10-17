@@ -1,31 +1,29 @@
 import "../styles/Projects.css";
+import ProjectTile from "./ProjectTile";
+import IMG_CoffeeIsLife from "../images/Project_CoffeeIsLife.png";
+import IMG_ManUnited from "../images/Project_ManUnited.png";
+import IMG_Coffida from "../images/Project_Coffida.jpg";
+import IMG_Notion from "../images/Project_Notion.png";
 
 const Projects = () => {
 	return (
-		<div>
-			<div>
-				<h3>Coffee Is Life</h3>
-				<p>Full-Stack Development</p>
-				<button>View Project</button>
-			</div>
-
-			<div>
-				<h3>Redesigning Manchester United's App</h3>
-				<p>UX/UI Design</p>
-				<button>View Project</button>
-			</div>
-
-			<div>
-				<h3>Coffida</h3>
-				<p>UX/UI Design</p>
-				<button>View Project</button>
-			</div>
-
-			<div>
-				<h3>Notion Website Clone</h3>
-				<p>Front-End Development</p>
-				<button>View Project</button>
-			</div>
+		<div className="projects">
+			<ProjectTile
+				image={IMG_CoffeeIsLife}
+				title="Coffee Is Life Website"
+			/>
+      <ProjectTile
+				image={IMG_ManUnited}
+				title="Man United App Design"
+			/>
+      <ProjectTile
+				image={IMG_Coffida}
+				title="Coffida Mobile App Design"
+			/>
+      <ProjectTile
+				image={IMG_Notion}
+				title="Notion Website Clone"
+			/>
 		</div>
 	);
 };
