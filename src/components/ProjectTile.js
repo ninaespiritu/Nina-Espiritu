@@ -23,17 +23,17 @@ const ProjectTile = (props) => {
 				<div>
 					{props.website ? (
 						<a href={props.website} target="_blank" rel="noopener noreferrer">
-							<button>Website</button>
+							<button>Website {arrow}</button>
 						</a>
 					) : null}
 					{props.github ? (
 						<a href={props.github} target="_blank" rel="noopener noreferrer">
-							<button>GitHub</button>
+							<button>GitHub {arrow}</button>
 						</a>
 					) : null}
 					{props.behance ? (
 						<a href={props.behance} target="_blank" rel="noopener noreferrer">
-							<button>Behance</button>
+							<button>Behance {arrow}</button>
 						</a>
 					) : null}
 				</div>
