@@ -5,3 +5,7 @@
   flex-direction: column;
   background-color: var(--neon-green);
 }
+
+.projects h2 {
+  margin: 0 0 12px;
+}

@@ -3,17 +3,67 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-	align-items: center;
-  text-align: center;
+  /* justify-content: flex-end; */
+	/* align-items: center; */
+  text-align: left;
 }
 
 .project-img {
+  margin: 48px 0 40px;
   height: 400px;
   width: 100%;
 }
+
 .project-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.project-info h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  letter-spacing: -0.75px;
+  line-height: var( --font-body-height);
+}
+
+.project-info p {
+  margin: 0 0 12px;
+}
+
+.project-info p span {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.project-links {
+  margin: 28px 0 0;
+  display: flex;
+}
+.project-links a {
+  text-decoration: none;
+}
+
+.project-links button {
+  margin: 0 12px 0 0;
+  padding: 0 18px;
+  height: var(--button-small-height);
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--button-small-font);
+  letter-spacing: var(--button-small-spacing);
+  border: 1.75px solid var(--black);
+  background-color: var(--neon-green);
+  color: var(--black);
+  fill: var(--black);
+  transition: all 0.25s;
+}
+
+.project-links button:hover {
+  background-color: var(--black);
+  color: var(--neon-green);
+  fill: var(--neon-green);
 }

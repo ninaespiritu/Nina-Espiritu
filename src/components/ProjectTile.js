@@ -13,14 +13,14 @@ const ProjectTile = (props) => {
 				<img src={props.image} alt="" />
 			</div>
 
-			<div>
+			<div className="project-info">
 				<h3>{props.title}</h3>
 				<p>{props.description}</p>
 				<p>
-					<span>{props.techstack}</span>
+					<span>{"> "}{props.techstack}</span>
 				</p>
 
-				<div>
+				<div className="project-links">
 					{props.website ? (
 						<a href={props.website} target="_blank" rel="noopener noreferrer">
 							<button>Website {arrow}</button>

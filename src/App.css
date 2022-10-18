@@ -55,6 +55,7 @@ p {
   font-family: var(--font-body);
   font-size: var(--font-body-size);
   line-height: var(--font-body-height);
+  margin: 0 0 28px;
 }
 
 button {
