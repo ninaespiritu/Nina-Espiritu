@@ -9,12 +9,33 @@ const ProjectTile = (props) => {
 
 	return (
 		<div className="project">
-			<img src={props.image} alt="" />
+			<div className="project-img">
+				<img src={props.image} alt="" />
+			</div>
 
-			<div className="overlay">
-				<div className="overlay-info">
-					<h3>{props.title}</h3>
-					<button>View Project {arrow}</button>
+			<div>
+				<h3>{props.title}</h3>
+				<p>{props.description}</p>
+				<p>
+					<span>{props.techstack}</span>
+				</p>
+
+				<div>
+					{props.website ? (
+						<a href={props.website} alt="">
+							<button>Website</button>
+						</a>
+					) : null}
+					{props.github ? (
+						<a href={props.github} alt="">
+							<button>GitHub</button>
+						</a>
+					) : null}
+					{props.behance ? (
+						<a href={props.behance} alt="">
+							<button>Behance</button>
+						</a>
+					) : null}
 				</div>
 			</div>
 		</div>
