@@ -1,0 +1,63 @@
+.contact {
+  padding: var(--padding);
+  min-height: 100vh;
+  width: 100%;
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.contact h4 {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: var( --font-body-height);
+}
+
+.contact button {
+  height: var(--button-big-height);
+  width: var(--button-big-width);
+  font-size: var(--button-big-font);
+  border: 1.75px solid var(--white);
+  background-color: var(--purple);
+  color: var(--white);
+  transition: all 0.25s;
+}
+
+.contact button:hover {
+  background-color: var(--neon-green);
+  box-shadow: none;
+}
+
+.contact h3 {
+  margin: 40px 0 8px;
+  font-size: 22px;
+  letter-spacing: -0.75px;
+  line-height: var( --font-body-height);
+}
+
+.contact p {
+  font-style: italic;
+  color: var(--purple-light);
+}
+
+.footer {
+  padding: var(--padding) 0 0;
+}
+
+.footer small {
+  color: var(--purple-light);
+}
+
+.footer a {
+  font-weight: 500;
+  transition: all 0.25s;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
