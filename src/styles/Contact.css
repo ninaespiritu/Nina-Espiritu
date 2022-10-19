@@ -1,5 +1,5 @@
 .contact {
-  padding: var(--padding);
+  padding: var(--padding) var(--padding) calc(var(--padding) / 2) var(--padding);
   min-height: 100vh;
   width: 100%;
 	display: flex;
@@ -17,31 +17,43 @@
   line-height: var( --font-body-height);
 }
 
-.contact button {
-  height: var(--button-big-height);
-  width: var(--button-big-width);
-  font-size: var(--button-big-font);
-  border: 1.75px solid var(--white);
-  background-color: var(--purple);
-  color: var(--white);
-  transition: all 0.25s;
+.link {
+  margin: 68px 0 0;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
 }
 
-.contact button:hover {
-  background-color: var(--neon-green);
-  box-shadow: none;
-}
-
-.contact h3 {
-  margin: 40px 0 8px;
+.link h3 {
+  margin: 0 0 8px;
   font-size: 22px;
   letter-spacing: -0.75px;
   line-height: var( --font-body-height);
 }
 
-.contact p {
+.link p {
+  margin: 0;
   font-style: italic;
   color: var(--purple-light);
+}
+
+.link button {
+  margin: 0 20px 0 0;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.75px solid var(--white);
+  border-radius: 100%;
+  background-color: var(--white);
+  color: var(--purple);
+  transition: all 0.25s;
+}
+
+.link button:hover {
+  border: 1.75px solid var(--neon-green);
+  background-color: var(--neon-green);
 }
 
 .footer {
@@ -59,5 +71,5 @@
 
 .footer a:hover {
   text-decoration: none;
-  color: var(--white);
+  color: var(--neon-green);
 }
