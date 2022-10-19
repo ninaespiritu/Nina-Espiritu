@@ -1,4 +1,5 @@
 import "../styles/Intro.css";
+import Socials from "./Socials";
 
 const Intro = () => {
 	return (
@@ -13,6 +14,7 @@ const Intro = () => {
 				</p>
 				<button>Contact Me</button>
 			</div>
+			<Socials />
 		</header>
 	);
 };
