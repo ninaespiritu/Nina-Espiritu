@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 const About = () => {
 	return (
-		<div className="about">
+		<div id="about" className="about">
 			<h2>About Me</h2>
 			<h3>
 				I began self-studying web development after being mesmerised by

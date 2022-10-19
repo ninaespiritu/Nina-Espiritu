@@ -7,7 +7,7 @@ import IMG_Notion from "../images/Project_Notion.png";
 
 const Projects = () => {
 	return (
-		<div className="projects">
+		<div id="projects" className="projects">
 			<h2> Some Projects I've Made</h2>
 			<ProjectTile
 				image={IMG_CoffeeIsLife}

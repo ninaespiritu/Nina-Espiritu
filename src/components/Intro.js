@@ -1,9 +1,12 @@
 import "../styles/Intro.css";
+import Navbar from "./Navbar";
 import Socials from "./Socials";
 
 const Intro = () => {
 	return (
 		<header className="intro">
+			<Navbar />
+
 			<div id="intro" className="intro-info">
 				<h1>Hello, I'm Nina</h1>
 				<h2>Developer + Designer</h2>
@@ -14,6 +17,7 @@ const Intro = () => {
 				</p>
 				<button>Contact Me</button>
 			</div>
+
 			<Socials />
 		</header>
 	);

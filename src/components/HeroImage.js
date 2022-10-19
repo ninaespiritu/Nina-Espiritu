@@ -3,7 +3,7 @@ import HeroImg from "../images/HeroImage.png";
 
 const HeroImage = () => {
 	return (
-		<div className="hero">
+		<div id="home" className="hero">
 			<img
 				src={HeroImg}
 				alt="Digital illustration of a woman working at a desk"
