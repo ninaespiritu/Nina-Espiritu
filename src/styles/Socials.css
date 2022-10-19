@@ -1,0 +1,22 @@
+.socials {
+  width: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials div {
+  height: auto;
+  width: auto;
+	filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.3));
+  color: var(--black);
+	will-change: transform;
+	transition: all 0.4s;
+}
+
+.socials div:hover {
+	color: var(--purple);
+	transform: translateY(-2.5px);
+  transition: all 0.2s;
+}

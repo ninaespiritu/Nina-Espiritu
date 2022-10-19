@@ -1,5 +1,6 @@
-import { useState } from "react";
 import "../styles/Navbar.css";
+import { useState } from "react";
+import { BsPlusLg } from "react-icons/bs";
 
 const Navbar = () => {
 	const [click, setClick] = useState(false);
@@ -7,27 +8,28 @@ const Navbar = () => {
 	const handleClick = () => setClick(!click);
 
 	return (
-		<nav>
-			<div onClick={handleClick}>
-				{click ? <button>Close</button> : <button>Menu</button>}
-			</div>
+		<nav className={click ? "navbar active" : "navbar"} onClick={handleClick}>
 			
-			<ul>
-				<li>
-					<a href="#home">Home</a>
-				</li>
-				<li>
-					<a href="#about">About</a>
-				</li>
-				<li>
-					<a href="#experience">Experience</a>
-				</li>
-				<li>
-					<a href="#projects">Projects</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
+				<div className={click ? "nav-icons active" : "nav-icons"}>
+					<BsPlusLg />
+				</div>
+			
+			<ul className={click ? "nav-items active" : "nav-items"}>
+				<a href="#home">
+					<li onClick={handleClick}>Home</li>
+				</a>
+				<a href="#about">
+					<li onClick={handleClick}>About</li>
+				</a>
+				<a href="#experience">
+					<li onClick={handleClick}>Experience</li>
+				</a>
+				<a href="#projects">
+					<li onClick={handleClick}>Projects</li>
+				</a>
+				<a href="#contact">
+					<li onClick={handleClick}>Contact</li>
+				</a>
 			</ul>
 		</nav>
 	);
