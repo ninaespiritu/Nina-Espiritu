@@ -9,3 +9,30 @@
 .projects h2 {
   margin: 0 0 12px;
 }
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1200px) {
+  .projects {
+    padding: var(--padding-1200px);
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .projects {
+    padding: var(--padding-1024px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .projects {
+    padding: var(--padding-768px);
+    /* justify-content: center; */
+  }
+}
+
+@media all and (max-width: 480px) {
+  .projects {
+    padding: calc(var(--padding-768px) + 16px) var(--padding-480px);
+  }
+}
