@@ -8,7 +8,6 @@
   background-color: var(--purple);
   color: var(--white);
 }
-
 .contact h4 {
   margin: 0 0 16px;
   font-size: 16px;
@@ -16,27 +15,23 @@
   letter-spacing: 0;
   line-height: var( --font-body-height);
 }
-
 .link {
   margin: 68px 0 0;
  display: flex;
  flex-direction: row;
  align-items: center;
 }
-
 .link h3 {
   margin: 0 0 8px;
   font-size: 22px;
   letter-spacing: -0.75px;
   line-height: var( --font-body-height);
 }
-
 .link p {
   margin: 0;
   font-style: italic;
   color: var(--purple-light);
 }
-
 .link button {
   margin: 0 20px 0 0;
   height: 55px;
@@ -50,26 +45,48 @@
   color: var(--purple);
   transition: all 0.25s;
 }
-
 .link button:hover {
   border: 1.75px solid var(--neon-green);
   background-color: var(--neon-green);
 }
-
 .footer {
   padding: var(--padding) 0 0;
 }
-
 .footer small {
   color: var(--purple-light);
 }
-
 .footer a {
   font-weight: 500;
   transition: all 0.25s;
 }
-
 .footer a:hover {
   text-decoration: none;
   color: var(--neon-green);
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1200px) {
+  .contact {
+    padding: var(--padding-1200px);
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .contact {
+    padding: var(--padding-1024px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .contact {
+    padding: var(--padding-768px);
+    /* justify-content: center; */
+  }
+}
+
+@media all and (max-width: 480px) {
+  .contact {
+    padding: calc(var(--padding-768px) + 16px) var(--padding-480px) var(--padding-480px);;
+  }
 }
