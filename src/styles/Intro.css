@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 1000;
   padding: var(--padding) var(--padding) calc(var(--padding) / 2) var(--padding);
-  min-height: 100%;
+  /* min-height: 100%; */
   width: 50%;
   display: flex;
 	flex-direction: column;
@@ -10,14 +10,12 @@
 	text-align: center;
   background-color: var(--white);
 }
-
 .intro-info {
   margin: 150px 0 0;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-
 .intro-info h1 {
   margin: 0 0 36px;
   font-size: 64px;
@@ -29,13 +27,13 @@
   font-size: 30px;
   font-weight: 500;
 }
-
 .intro-info p {
+  z-index: 1;
   font-size: 16px;
   margin: 0 0 80px;
 }
-
 .intro-info button {
+  margin: 0 0 4 0px;
   height: var(--button-big-height);
   width: var(--button-big-width);
   font-size: var(--button-big-font);
@@ -43,10 +41,89 @@
   0 0 100px 20px var(--neon-green),
   0 0 20px 0px var(--neon-green);
   background-color: var(--white);
+  color: var(--black);
   transition: box-shadow 0.25s, background-color 0.75s;
 }
-
 .intro-info button:hover {
   background-color: var(--neon-green);
   box-shadow: none;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1200px) {
+  .intro {
+    padding: var(--padding-1200px);
+    padding-bottom: calc(var(--padding-1200px) / 2);
+  }
+  .intro-info {
+    margin: 120px 0 0;
+  }
+  .intro-info h1 {
+    margin: 0 0 30px;
+    font-size: 56px;
+  }
+  .intro-info p {
+    margin: 0 0 60px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .intro {
+    padding: var(--padding-1024px);
+    padding-bottom: calc(var(--padding-1024px) / 2);
+  }
+  .intro-info h1 {
+    margin: 0 0 24px;
+    font-size: 48px;
+  }
+  .intro-info h2 {
+    margin: 0 0 16px;
+    font-size: 28px;
+  }
+  .intro-info p {
+    font-size: 15px;
+    margin: 0 0 50px;
+  }
+}
+
+@media all and (max-height: 700px) {
+  .intro-info button {
+    height: calc(var(--button-big-height) - 10px);
+    width: calc(var(--button-big-width) - 25px);
+    font-size: calc(var(--button-big-font) - 2px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .intro {
+    padding: var(--padding-768px);
+    padding-bottom: calc(var(--padding-768px) / 2);
+    position: initial;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+  }
+  .intro-info {
+    margin: 0;
+  }
+  .intro-info h1 {
+    font-size: 44px;
+  }
+  .intro-info h2 {
+    margin: 0 0 14px;
+    font-size: 26px;
+  }
+  .intro-info button {
+    height: calc(var(--button-big-height) - 10px);
+    width: calc(var(--button-big-width) - 25px);
+    font-size: calc(var(--button-big-font) - 2px);
+  }
+}
+
+@media all and (max-width: 480px) {
+  .intro {
+    padding: var(--padding-480px);
+    padding-bottom: calc(var(--padding-480px) / 2);
+  }
 }

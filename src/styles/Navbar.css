@@ -1,5 +1,9 @@
 .navbar {
   position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  margin: var(--padding) 0 0 var(--padding);
   padding: 10px;
   height: var(--button-big-height);
   display: flex;
@@ -12,11 +16,9 @@
   box-shadow: 0 0px 36px rgba(40, 40, 40, 0.075);
   transition: all 0.25s;
 }
-
 .navbar.active {
   width: 420px;
 }
-
 .nav-icons {
   position: absolute;
   height: 45px;
@@ -31,19 +33,16 @@
   animation: spin 5s infinite ease-out;
   transition: all 0.25s;
 }
-
 .nav-icons:hover {
   background-color: var(--neon-green);
   scale: 1.15;
 }
-
 .nav-icons.active {
   background-color: var(--black);
   color: var(--white);
   animation: none;
   transform: rotate(45deg);
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -55,7 +54,6 @@
     transform: rotate(360deg);
   }
 }
-
 .nav-items {
   margin: 0 15px 0 65px;
   width: 100%;
@@ -72,9 +70,34 @@
   opacity: 0;
   transition: all 0.15s ease-out;
 }
-
 .nav-items.active {
   color: var(--black);
   opacity: 1;
   transition: all 0.45s ease-out;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1200px) {
+  .navbar {
+    margin: var(--padding-1200px) 0 0 var(--padding-1200px);
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .navbar {
+    margin: var(--padding-1024px) 0 0 var(--padding-1024px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .navbar {
+    margin: var(--padding-768px) 0 0 var(--padding-768px);
+  }
+}
+
+@media all and (max-width: 480px) {
+  .navbar {
+    margin: var(--padding-480px) 0 0 var(--padding-480px);
+  }
 }
