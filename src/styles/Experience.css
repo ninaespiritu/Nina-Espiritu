@@ -104,3 +104,30 @@
 #cert-agile {
   margin: 0 0 36px;
 }
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1200px) {
+  .experience {
+    padding: var(--padding-1200px);
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .experience {
+    padding: var(--padding-1024px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .experience {
+    padding: var(--padding-768px);
+    /* justify-content: center; */
+  }
+}
+
+@media all and (max-width: 480px) {
+  .experience {
+    padding: calc(var(--padding-768px) + 16px) var(--padding-480px);
+  }
+}
