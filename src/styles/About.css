@@ -40,3 +40,30 @@
 .about ul li span {
   margin: 0 12px 0 0;
 }
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1200px) {
+  .about {
+    padding: var(--padding-1200px);
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .about {
+    padding: var(--padding-1024px);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about {
+    padding: var(--padding-768px);
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .about {
+    padding: var(--padding-480px);
+  }
+}
