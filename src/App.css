@@ -98,27 +98,7 @@ a:hover {
 /* MEDIA QUERIES */
 
 @media all and (min-width: 1201px) {
-  /* * {
-    color: red;
-  } */
-  /* .app p,
-  .app li,
-  .app p span {
-      line-height: 2;
-  }
-  .app-container {
-      width: 1400px;
-  }
-  .app h1 {
-      font-size: 100px;
-  }
-  h2 {
-      font-size: 40px;
-  }
-  
-  h4 {
-      font-size: 20px;
-  } */
+
 }
 
 @media all and (max-width: 1200px) {
@@ -126,9 +106,7 @@ a:hover {
 }
 
 @media all and (max-width: 1024px) {
-  /* .app {
-      margin: 0 60px;
-  } */
+
 }
 
 @media all and (max-width: 768px) {
@@ -145,19 +123,13 @@ a:hover {
   .app-socials {
     display: none;
   }
-  /* .app {
-      margin: 0 40px;
+  .app-all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  h2 {
-      font-size: 30px;
-  }
-  h4 {
-      font-size: 16px;
-  } */
 }
 
 @media all and (max-width: 480px) {
-  /* .app {
-      margin: 0 20px;
-  } */
+
 }
