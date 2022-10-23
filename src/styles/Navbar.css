@@ -96,13 +96,16 @@
 
 @media all and (max-width: 500px) {
   .navbar {
+    margin: 32px 32px 0 0;
+    left: auto;
+    right: 0;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     border-radius: 32px;
   }
   .navbar.active {
     height: 300px;
-    width: 200px;
+    width: 190px;
   }
   .nav-items {
     margin: 0;
@@ -117,11 +120,5 @@
   }
   .nav-items a:hover {
     text-decoration: none;
-  }
-}
-
-@media all and (max-width: 480px) {
-  .navbar {
-    margin: var(--padding-480px) 0 0 var(--padding-480px);
   }
 }
