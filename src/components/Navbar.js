@@ -8,12 +8,16 @@ const Navbar = () => {
 	const handleClick = () => setClick(!click);
 
 	return (
-		<nav className={click ? "navbar active" : "navbar"} onClick={handleClick}>
-			
-				<div className={click ? "nav-icons active" : "nav-icons"}>
+		<nav
+			className={click ? "navbar active" : "navbar"}
+			onClick={handleClick}
+		>
+			<div className={click ? "nav-icons active" : "nav-icons"}>
+				<div>
 					<BsPlusLg />
 				</div>
-			
+			</div>
+
 			<ul className={click ? "nav-items active" : "nav-items"}>
 				<a href="#home">
 					<li onClick={handleClick}>Home</li>
