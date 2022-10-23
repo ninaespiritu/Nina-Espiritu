@@ -79,7 +79,7 @@ const Experience = () => {
 					<div className="job-title" onClick={() => handleClick2()}>
 						<div>
 							<h3>Thumbnail Designer @ WatchNetwork</h3>
-							<h4>UK (Remote) | Nov 2022 - present</h4>
+							<h4>UK (Remote) | Nov 2021 - present</h4>
 						</div>
 						<div
 							className={
