@@ -13,7 +13,9 @@ const Intro = () => {
 					full-stack development, graphic design, user exprience, and
 					everything in between.
 				</p>
-				<button>Contact Me</button>
+				<a href="#contact">
+					<button>Contact Me</button>
+				</a>
 			</div>
 
 			{/* <Socials /> */}
