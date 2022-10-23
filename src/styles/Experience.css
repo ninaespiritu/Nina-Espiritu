@@ -2,7 +2,7 @@
   padding: var(--padding);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-height: 100vh;
   width: 100%;
   background-color: var(--purple);
@@ -17,27 +17,15 @@
 .work {
   margin: 0 0 48px;
 }
-.job1 {
-  padding: 0 0 24px;
-  border-bottom: 1.75px solid var(--purple);
-  transition: border-bottom 0.5s;
-}
-.job2, .job3 {
-  padding: 32px 0 16px;
-  border-bottom: 1.75px solid var(--purple);
-  transition: border-bottom 0.25s;
-}
 .job2 p, .job3 p {
   margin: 0;
-}
-.job1:hover, .job2:hover, .job3:hover {
-  border-bottom: 1.75px solid var(--white);
 }
 .work h4 {
   font-size: var(--font-body-size);
   font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  color: var(--purple-light);
 }
 .work h4 {
   margin: 0 0 28px;
@@ -45,7 +33,6 @@
 .resp {
   font-style: italic;
   margin: 0;
-  color: var(--purple-light);
 }
 .resp span {
   font-weight: 600;
@@ -57,7 +44,6 @@
   font-size: var(--font-body-size);
   line-height: var(--font-body-height);
   list-style-type: disc;
-  color: var(--purple-light);
 }
 .certs h4 {
   font-size: 16px;
@@ -88,6 +74,39 @@
 }
 #cert-agile {
   margin: 0 0 36px;
+}
+.job-title {
+  display: flex;
+  justify-content: space-between;
+}
+.job-toggle {
+  margin: 3px 0 0 0;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.job-toggle.active {
+  rotate: -270deg;
+}
+.desc {
+  padding: 0 0 20px;
+  max-height: 0;
+  width: 0;
+  opacity: 0;
+  transition: all 0.5s, opacity 0.2s;
+}
+.desc.active1,
+.desc.active2,
+.desc.active3 {
+  padding: 0 0 40px;
+  max-height: 500px;
+  width: 100%;
+  opacity: 1;
+  transition: all 0.5s, width 0.2s;
 }
 
 /* MEDIA QUERIES */
