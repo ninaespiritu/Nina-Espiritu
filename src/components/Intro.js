@@ -2,7 +2,7 @@ import "../styles/Intro.css";
 
 const Intro = () => {
 	return (
-		<header className="intro">
+		<header id="home" className="intro">
 			{/* <Navbar /> */}
 
 			<div id="intro" className="intro-info">

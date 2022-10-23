@@ -7,6 +7,11 @@ const Navbar = () => {
 
 	const handleClick = () => setClick(!click);
 
+	const handleHome = () => {
+		handleClick();
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	};
+
 	return (
 		<nav
 			className={click ? "navbar active" : "navbar"}
@@ -20,7 +25,7 @@ const Navbar = () => {
 
 			<ul className={click ? "nav-items active" : "nav-items"}>
 				<a href="#home">
-					<li onClick={handleClick}>Home</li>
+					<li onClick={handleHome}>Home</li>
 				</a>
 				<a href="#about">
 					<li onClick={handleClick}>About</li>
