@@ -8,38 +8,31 @@
   background-color: var(--purple);
   color: var(--white);
 }
-
 .experience h3 {
   margin: 0 0 12px;
   font-size: 22px;
   letter-spacing: -0.75px;
   line-height: var( --font-body-height);
 }
-
 .work {
   margin: 0 0 48px;
 }
-
 .job1 {
   padding: 0 0 24px;
   border-bottom: 1.75px solid var(--purple);
   transition: border-bottom 0.5s;
 }
-
 .job2, .job3 {
   padding: 32px 0 16px;
   border-bottom: 1.75px solid var(--purple);
   transition: border-bottom 0.25s;
 }
-
 .job2 p, .job3 p {
   margin: 0;
 }
-
 .job1:hover, .job2:hover, .job3:hover {
   border-bottom: 1.75px solid var(--white);
 }
-
 .work h4 {
   font-size: var(--font-body-size);
   font-weight: 400;
@@ -49,18 +42,15 @@
 .work h4 {
   margin: 0 0 28px;
 }
-
 .resp {
   font-style: italic;
   margin: 0;
   color: var(--purple-light);
 }
-
 .resp span {
   font-weight: 600;
   font-style: normal;
 }
-
 .work ul li {
   margin: 0 0 0 24px;
   font-family: var(--font-body);
@@ -69,20 +59,17 @@
   list-style-type: disc;
   color: var(--purple-light);
 }
-
 .certs h4 {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: var( --font-body-height);
 }
-
 .certs p {
   margin: 0 0 10px;
   font-style: italic;
   color: var(--purple-light);
 }
-
 .certs button {
   height: var(--button-small-height);
   width: var(--button-small-width);
@@ -94,13 +81,11 @@
   color: var(--white);
   transition: all 0.25s;
 }
-
 .certs button:hover {
   font-weight: 500;
   background-color: var(--white);
   color: var(--purple);
 }
-
 #cert-agile {
   margin: 0 0 36px;
 }
@@ -122,12 +107,16 @@
 @media all and (max-width: 768px) {
   .experience {
     padding: var(--padding-768px);
-    /* justify-content: center; */
   }
 }
 
 @media all and (max-width: 480px) {
   .experience {
-    padding: calc(var(--padding-768px) + 16px) var(--padding-480px);
+    padding: var(--padding-480px);
+    padding-top:  calc(var(--padding-480px) + 100px);
+    padding-bottom:  calc(var(--padding-480px) + 40px);
+  }
+  .experience h3 {
+    font-size: 18px;
   }
 }

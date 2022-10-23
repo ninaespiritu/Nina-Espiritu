@@ -66,4 +66,7 @@
   .about {
     padding: var(--padding-480px);
   }
+  .about h3 {
+    font-size: 18px;
+  }
 }

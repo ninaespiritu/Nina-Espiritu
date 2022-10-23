@@ -33,6 +33,8 @@
 
 @media all and (max-width: 480px) {
   .projects {
-    padding: calc(var(--padding-768px) + 16px) var(--padding-480px);
+    padding: var(--padding-480px);
+    padding-top:  calc(var(--padding-480px) + 100px);
+    padding-bottom:  calc(var(--padding-480px) + 40px);
   }
 }

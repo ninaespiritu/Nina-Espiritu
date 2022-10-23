@@ -87,6 +87,7 @@
 
 @media all and (max-width: 480px) {
   .contact {
-    padding: calc(var(--padding-768px) + 16px) var(--padding-480px) var(--padding-480px);;
+    padding: var(--padding-480px);
+    padding-top:  calc(var(--padding-480px) + 100px);
   }
 }

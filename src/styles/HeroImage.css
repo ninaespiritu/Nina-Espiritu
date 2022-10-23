@@ -12,7 +12,10 @@
 /* MEDIA QUERIES */
 
 @media all and (max-width: 768px) {
-  .hero {
+  /* .hero {
     height: 70vh;
+  } */
+  .hero img {
+    object-position: 55%;
   }
 }
