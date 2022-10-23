@@ -153,13 +153,25 @@ const Experience = () => {
 					<div>
 						<h4>AgilePM® Agile Project Management Foundation</h4>
 						<p>APMG International, 2022</p>
-						<button id="cert-agile">View Credential</button>
+						<a
+							href="https://www.credly.com/badges/e7be6da4-b0e8-4a7c-bea9-fd9487a9ae65?source=linked_in_profile"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button id="cert-agile">View Credential</button>
+						</a>
 					</div>
 
 					<div>
 						<h4>ISTQB® Certified Tester Foundation Level</h4>
 						<p>BCS, The Chartered Institute for IT, 2022</p>
-						<button>View Credential</button>
+						<a
+							href="https://drive.google.com/file/d/1LM72lIIQK3_a7wpDyOD-vZYL6biFpwYM/view"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button id="cert-agile">View Credential</button>
+						</a>
 					</div>
 				</div>
 			</div>
