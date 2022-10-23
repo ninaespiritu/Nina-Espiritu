@@ -17,12 +17,12 @@
 }
 .link {
   margin: 68px 0 0;
- display: flex;
- flex-direction: row;
- align-items: center;
+  display: flex;
+  flex-direction: row;
+ /* align-items: center; */
 }
 .link h3 {
-  margin: 0 0 8px;
+  margin: 0 0 4px;
   font-size: 22px;
   letter-spacing: -0.75px;
   line-height: var( --font-body-height);
@@ -33,7 +33,7 @@
   color: var(--purple-light);
 }
 .link button {
-  margin: 0 20px 0 0;
+  margin: 2px 20px 0 0;
   height: 55px;
   width: 55px;
   display: flex;
@@ -63,6 +63,9 @@
   text-decoration: none;
   color: var(--neon-green);
 }
+.footer-socials {
+  display: none;
+}
 
 /* MEDIA QUERIES */
 
@@ -76,12 +79,14 @@
   .contact {
     padding: var(--padding-1024px);
   }
+  .footer-socials {
+    display: initial;
+  }
 }
 
 @media all and (max-width: 768px) {
   .contact {
     padding: var(--padding-768px);
-    /* justify-content: center; */
   }
 }
 

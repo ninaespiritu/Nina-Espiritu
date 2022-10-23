@@ -38,21 +38,15 @@
 
 @media all and (max-width: 1024px) {
   .socials {
-    margin-left: var(--padding-1024px);
-    margin-bottom: calc(var(--padding-1024px) / 2);
+    position: static;
+    margin: 0;
+    padding: 0 0 12px;
   }
-}
-
-@media all and (max-width: 768px) {
-  .socials {
-    margin-left: var(--padding-768px);
-    margin-bottom: calc(var(--padding-768px) / 2);
+  .socials div {
+    color: var(--white);
   }
-}
-
-@media all and (max-width: 480px) {
-  .socials {
-    margin-left: var(--padding-480px);
-    margin-bottom: calc(var(--padding-480px) / 2);
+  .socials div:hover {
+    color: var(--white);
+    transform: none;
   }
 }

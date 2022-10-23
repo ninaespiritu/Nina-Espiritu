@@ -1,4 +1,5 @@
 import "../styles/Contact.css";
+import Socials from "../components/Socials.js";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -59,6 +60,9 @@ const Contact = () => {
 			</div>
 
 			<div className="footer">
+				<div className="footer-socials">
+					<Socials />
+				</div>
 				<small>
 					Built and designed by{" "}
 					<a
