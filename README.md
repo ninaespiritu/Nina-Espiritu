@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/ninaespiritu/Nina-Espiritu/main/public/logo192.png" width="100" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  ninaespiritu.com
+</h1>
 
-## Available Scripts
+<p align="center">
+  The second iteration of <a href="https://www.ninaespiritu.com/" target="_blank">ninaespiritu.com</a> built with React.js and hosted with Netlify
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  Previous iterations:
+  <a href="https://github.com/ninaespiritu/Nina-Espiritu-V1" target="_blank">Version 1</a>
+</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ninaespiritu/Nina-Espiritu/main/src/images/NinaEspiritu_Website.gif" />
+</div>
 
-### `npm start`
+<br />
+<p align="center">
+  This website is fully responsive and compatible for mobile devices.
+</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/ninaespiritu/Nina-Espiritu/main/src/images/NinaEspiritu_Responsive.gif" />
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Setting Up
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Install the dependencies
 
-### `npm test`
+   ```sh
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Start the development server
 
-### `npm run build`
+   ```sh
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Building & Running for Production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Generate a full static production build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```sh
+   npm run build
+   ```
 
-### `npm run eject`
+1. Preview the site as it will appear once deployed
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```sh
+   npm run serve
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎨 Color Reference
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Neon Green     | ![#EAFFA7](https://via.placeholder.com/10/EAFFA7?text=+) `#EAFFA7` |
+| Purple         | ![#5100F1](https://via.placeholder.com/10/5100F1?text=+) `#5100F1` |
+| Light Purple   | ![#C7C9FF](https://via.placeholder.com/10/C7C9FF?text=+) `#C7C9FF` |
+| White          | ![#FCFCFC](https://via.placeholder.com/10/FCFCFC?text=+) `#FCFCFC` |
+| Black          | ![#282828](https://via.placeholder.com/10/282828?text=+) `#282828` |
