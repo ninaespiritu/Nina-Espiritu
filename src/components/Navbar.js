@@ -18,7 +18,7 @@ const Navbar = () => {
 			scale: 0,
 		},
 		show: {
-			scale: [0, 2.25, 1],
+			scale: [0, 1.75, 1],
 			transition: {
 				delay: 2.5,
 				type: "spring",
