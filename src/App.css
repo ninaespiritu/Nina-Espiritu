@@ -98,7 +98,8 @@ a:hover {
 .section-projects {
   background-color: var(--neon-green);
 }
-.section-experience {
+.section-experience,
+.section-contact {
   background-color: var(--purple);
 }
 

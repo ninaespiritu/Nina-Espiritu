@@ -2,19 +2,28 @@ import "../styles/Contact.css";
 import Socials from "../components/Socials.js";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedinIn } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { container, item } from "./Animations";
 
 const Contact = () => {
 	return (
-		<div id="contact" className="contact">
+		<motion.div
+			id="contact"
+			className="contact"
+			variants={container}
+			initial="hidden"
+			whileInView="show"
+			viewport={{ once: true, amount: 0.25 }}
+		>
 			<div>
-				<h2>Get In Touch</h2>
-				<h4>
+				<motion.h2 variants={item}>Get In Touch</motion.h2>
+				<motion.h4 variants={item}>
 					My inbox is always open &#8212; whether you have an enquiry,
 					a project and collaboration idea, or just want to say hello,
 					I'd love to hear from you!
-				</h4>
+				</motion.h4>
 
-				<div className="link">
+				<motion.div className="link" variants={item}>
 					<a
 						href="mailto:ninaangela.espiritu@gmail.com"
 						rel="noopener noreferrer"
@@ -33,9 +42,9 @@ const Contact = () => {
 							<p>ninaangela.espiritu@gmail.com</p>
 						</a>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className="link">
+				<motion.div className="link" variants={item}>
 					<a
 						href="https://www.linkedin.com/in/nina-espiritu/"
 						target="_blank"
@@ -56,7 +65,7 @@ const Contact = () => {
 							<p>https://www.linkedin.com/in/nina-espiritu/</p>
 						</a>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 
 			<div className="footer">
@@ -75,7 +84,7 @@ const Contact = () => {
 					&copy; All rights reserved
 				</small>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
