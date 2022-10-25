@@ -1,6 +1,7 @@
 import "../styles/Navbar.css";
 import { useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
 	const [click, setClick] = useState(false);
@@ -12,10 +13,26 @@ const Navbar = () => {
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	};
 
+	const itemNavbar = {
+		hidden: {
+			scale: 0,
+		},
+		show: {
+			scale: [0, 2.25, 1],
+			transition: {
+				delay: 2.5,
+				type: "spring",
+			},
+		},
+	};
+
 	return (
-		<nav
+		<motion.nav
 			className={click ? "navbar active" : "navbar"}
 			onClick={handleClick}
+			variants={itemNavbar}
+			initial="hidden"
+			animate="show"
 		>
 			<div className={click ? "nav-icons active" : "nav-icons"}>
 				<div>
@@ -40,7 +57,7 @@ const Navbar = () => {
 					<li onClick={handleClick}>Contact</li>
 				</a>
 			</ul>
-		</nav>
+		</motion.nav>
 	);
 };
 
