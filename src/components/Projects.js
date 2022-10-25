@@ -4,11 +4,20 @@ import IMG_CoffeeIsLife from "../images/Project_CoffeeIsLife.png";
 import IMG_ManUnited from "../images/Project_ManUnited.png";
 import IMG_Coffida from "../images/Project_Coffida.png";
 import IMG_Notion from "../images/Project_Notion.png";
+import { motion } from "framer-motion";
+import { container, item } from "./Animations";
 
 const Projects = () => {
 	return (
-		<div id="projects" className="projects">
-			<h2> Some Projects I've Made</h2>
+		<motion.div
+			id="projects"
+			className="projects"
+			variants={container}
+			initial="hidden"
+			whileInView="show"
+			viewport={{ once: true, amount: 0.1 }}
+		>
+			<motion.h2 variants={item}>Some Projects I've Made</motion.h2>
 			<ProjectTile
 				image={IMG_CoffeeIsLife}
 				title="Coffee Is Life Website"
@@ -39,7 +48,7 @@ const Projects = () => {
 				techstack="Figma &amp; Adobe Photoshop"
 				behance="https://www.behance.net/gallery/123523189/Coffida-UI-App-Design"
 			/>
-		</div>
+		</motion.div>
 	);
 };
 

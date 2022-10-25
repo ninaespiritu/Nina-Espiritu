@@ -1,40 +1,76 @@
 import "../styles/ProjectTile.css";
 import { HiArrowRight } from "react-icons/hi";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { container, item } from "./Animations";
 
 const ProjectTile = (props) => {
 	return (
-		<div className="project">
-			<div className="project-img">
+		<motion.div
+			className="project"
+			variants={container}
+			initial="hidden"
+			whileInView="show"
+			viewport={{ once: true, amount: 0.45 }}
+		>
+			<motion.div className="project-img" variants={item}>
 				<img src={props.image} alt="" />
-			</div>
+			</motion.div>
 
 			<div className="project-info">
-				<h3>{props.title}</h3>
-				<p>{props.description}</p>
-				<p className="project-techstack">
-					<HiArrowRight /><span>{props.techstack}</span>
-				</p>
+				<motion.h3 variants={item}>{props.title}</motion.h3>
+				<motion.p variants={item}>{props.description}</motion.p>
+				<motion.p className="project-techstack" variants={item}>
+					<HiArrowRight />
+					<span>{props.techstack}</span>
+				</motion.p>
 
-				<div className="project-links">
+				<motion.div className="project-links" variants={item}>
 					{props.website ? (
-						<a href={props.website} target="_blank" rel="noopener noreferrer">
-							<button>Website<span><FaExternalLinkAlt /></span></button>
+						<a
+							href={props.website}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>
+								Website
+								<span>
+									<FaExternalLinkAlt />
+								</span>
+							</button>
 						</a>
 					) : null}
 					{props.github ? (
-						<a href={props.github} target="_blank" rel="noopener noreferrer">
-							<button>GitHub<span><FaExternalLinkAlt /></span></button>
+						<a
+							href={props.github}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>
+								GitHub
+								<span>
+									<FaExternalLinkAlt />
+								</span>
+							</button>
 						</a>
 					) : null}
 					{props.behance ? (
-						<a href={props.behance} target="_blank" rel="noopener noreferrer">
-							<button>Behance<span><FaExternalLinkAlt /></span></button>
+						<a
+							href={props.behance}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button>
+								Behance
+								<span>
+									<FaExternalLinkAlt />
+								</span>
+							</button>
 						</a>
 					) : null}
-				</div>
+				</motion.div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

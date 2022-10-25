@@ -94,7 +94,8 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-.section-about {
+.section-about,
+.section-projects {
   background-color: var(--neon-green);
 }
 .section-experience {
