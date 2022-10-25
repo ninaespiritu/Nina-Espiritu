@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "../styles/Experience.css";
 import { FaChevronRight } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { container, item } from "./Animations";
 
 const Experience = () => {
 	const [click1, setClick1] = useState(false);
@@ -12,10 +14,16 @@ const Experience = () => {
 
 	return (
 		<div id="experience" className="experience">
-			<div className="work">
-				<h2>Work Experience</h2>
+			<motion.div
+				className="work"
+				variants={container}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true, amount: 0.25 }}
+			>
+				<motion.h2 variants={item}>Work Experience</motion.h2>
 
-				<div className="job1">
+				<motion.div className="job1" variants={item}>
 					<div className="job-title" onClick={() => handleClick1()}>
 						<div>
 							<h3>Technical Analyst @ GRAYCE</h3>
@@ -73,9 +81,9 @@ const Experience = () => {
 							</li>
 						</ul>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className="job2">
+				<motion.div className="job2" variants={item}>
 					<div className="job-title" onClick={() => handleClick2()}>
 						<div>
 							<h3>Thumbnail Designer @ WatchNetwork</h3>
@@ -97,9 +105,9 @@ const Experience = () => {
 							thumbnail unique.
 						</p>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className="job3">
+				<motion.div className="job3" variants={item}>
 					<div className="job-title" onClick={() => handleClick3()}>
 						<div>
 							<h3>Design and Marketing Assiociate @ Flytinary</h3>
@@ -143,14 +151,20 @@ const Experience = () => {
 							</li>
 						</ul>
 					</div>
-				</div>
-			</div>
+				</motion.div>
+			</motion.div>
 
-			<div className="certs">
-				<h2>Certifications</h2>
+			<motion.div
+				className="certs"
+				variants={container}
+				initial="hidden"
+				whileInView="show"
+				viewport={{ once: true, amount: 0.25 }}
+			>
+				<motion.h2 variants={item}>Certifications</motion.h2>
 
 				<div className="certs-box">
-					<div>
+					<motion.div variants={item}>
 						<h4>AgilePM® Agile Project Management Foundation</h4>
 						<p>APMG International, 2022</p>
 						<a
@@ -160,9 +174,9 @@ const Experience = () => {
 						>
 							<button id="cert-agile">View Credential</button>
 						</a>
-					</div>
+					</motion.div>
 
-					<div>
+					<motion.div variants={item}>
 						<h4>ISTQB® Certified Tester Foundation Level</h4>
 						<p>BCS, The Chartered Institute for IT, 2022</p>
 						<a
@@ -172,9 +186,9 @@ const Experience = () => {
 						>
 							<button id="cert-agile">View Credential</button>
 						</a>
-					</div>
+					</motion.div>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };

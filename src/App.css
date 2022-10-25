@@ -97,6 +97,9 @@ a:hover {
 .section-about {
   background-color: var(--neon-green);
 }
+.section-experience {
+  background-color: var(--purple);
+}
 
 /* MEDIA QUERIES */
 
