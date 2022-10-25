@@ -94,6 +94,9 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+.section-about {
+  background-color: var(--neon-green);
+}
 
 /* MEDIA QUERIES */
 

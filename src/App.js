@@ -15,15 +15,25 @@ const App = () => {
 			<div className="app-intro">
 				<Intro />
 				<div className="app-socials">
-				<Socials />
+					<Socials />
 				</div>
 			</div>
 			<div className="app-all">
-				<HeroImage />
-				<About />
-				<Experience />
-				<Projects />
-				<Contact />
+				<div className="section-hero">
+					<HeroImage />
+				</div>
+				<div className="section-about">
+					<About />
+				</div>
+				<div className="section-experience">
+					<Experience />
+				</div>
+				<div className="section-projects">
+					<Projects />
+				</div>
+				<div className="section-contact">
+					<Contact />
+				</div>
 			</div>
 		</div>
 	);

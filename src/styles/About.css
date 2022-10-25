@@ -52,13 +52,13 @@
 @media all and (max-width: 1024px) {
   .about {
     padding: var(--padding-1024px);
+    justify-content: center;
   }
 }
 
 @media all and (max-width: 768px) {
   .about {
     padding: var(--padding-768px);
-    justify-content: center;
   }
 }
 
