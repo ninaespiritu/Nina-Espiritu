@@ -1,24 +1,66 @@
 import "../styles/Intro.css";
+import { motion } from "framer-motion";
 
 const Intro = () => {
+	const containerIntro = {
+		hidden: {
+			opacity: 0,
+			scale: 0.85,
+			y: -10,
+			filter: "blur(5px)",
+		},
+		show: {
+			opacity: 1,
+			scale: 1,
+			y: 0,
+			filter: "blur(0px)",
+			transition: {
+				duration: 0.75,
+				delay: 0.5,
+				ease: "easeOut",
+				staggerChildren: 0.25,
+				delayChildren: 1,
+			},
+		},
+	};
+
+	const itemIntro = {
+		hidden: {
+			opacity: 0,
+			y: 40,
+		},
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 0.75,
+				ease: "easeOut",
+			},
+		},
+	};
+
 	return (
 		<header id="home" className="intro">
-			{/* <Navbar /> */}
-
-			<div id="intro" className="intro-info">
+			<motion.div
+				id="intro"
+				className="intro-info"
+				variants={containerIntro}
+				initial="hidden"
+				animate="show"
+			>
 				<h1>Hello, I'm Nina</h1>
-				<h2>Developer + Designer</h2>
-				<p>
+				<motion.h2 variants={itemIntro}>Developer + Designer</motion.h2>
+				<motion.p variants={itemIntro}>
 					I am a passionate tech professional with a keen interest in
 					full-stack development, graphic design, user experience, and
 					everything in between.
-				</p>
+				</motion.p>
 				<a href="#contact">
-					<button>Contact Me</button>
+					<motion.button variants={itemIntro}>
+						Contact Me
+					</motion.button>
 				</a>
-			</div>
-
-			{/* <Socials /> */}
+			</motion.div>
 		</header>
 	);
 };
