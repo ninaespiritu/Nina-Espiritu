@@ -5,6 +5,21 @@ import { motion } from "framer-motion";
 import { container, item } from "./Animations";
 
 const ProjectTile = (props) => {
+	const itemProjectImage = {
+		hidden: {
+			opacity: 0,
+			scale: 0.5,
+		},
+		show: {
+			opacity: 1,
+			scale: 1,
+			transition: {
+				duration: 0.5,
+				ease: "easeOut",
+			},
+		},
+	};
+
 	return (
 		<motion.div
 			className="project"
@@ -13,7 +28,7 @@ const ProjectTile = (props) => {
 			whileInView="show"
 			viewport={{ once: true, amount: 0.45 }}
 		>
-			<motion.div className="project-img" variants={item}>
+			<motion.div className="project-img" variants={itemProjectImage}>
 				<img src={props.image} alt="" />
 			</motion.div>
 
