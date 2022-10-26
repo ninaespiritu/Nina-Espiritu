@@ -65,6 +65,8 @@
 @media all and (max-width: 480px) {
   .about {
     padding: var(--padding-480px);
+    padding-top:  calc(var(--padding-480px) + 100px);
+    padding-bottom:  calc(var(--padding-480px) + 40px);
   }
   .about h3 {
     font-size: 18px;
