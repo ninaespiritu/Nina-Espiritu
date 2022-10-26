@@ -84,6 +84,10 @@ a:hover {
   /* align-items: stretch; */
   color: var(--black);
 }
+.app-intro {
+  display: flex;
+  align-items: center;
+}
 .app-intro,
 .app-intro-slide {
   position: fixed;
@@ -101,7 +105,7 @@ a:hover {
 .section-hero {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 0;
 }
 .section-about,
 .section-projects {
@@ -144,6 +148,9 @@ a:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  .section-hero {
+    z-index: 2;
   }
 }
 
