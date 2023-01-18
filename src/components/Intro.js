@@ -49,7 +49,7 @@ const Intro = () => {
 				animate="show"
 			>
 				<h1>Hello, I'm Nina</h1>
-				<motion.h2 variants={itemIntro}>Developer + Designer</motion.h2>
+				<motion.h2 variants={itemIntro}>I love to design and code</motion.h2>
 				<motion.p variants={itemIntro}>
 					I am a passionate tech professional with a keen interest in
 					full-stack development, graphic design, user experience, and
