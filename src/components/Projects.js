@@ -1,5 +1,6 @@
 import "../styles/Projects.css";
 import ProjectTile from "./ProjectTile";
+import IMG_Catjack from "../images/Project_Catjack.png";
 import IMG_CoffeeIsLife from "../images/Project_CoffeeIsLife.png";
 import IMG_ManUnited from "../images/Project_ManUnited.png";
 import IMG_Coffida from "../images/Project_Coffida.png";
@@ -18,6 +19,14 @@ const Projects = () => {
 			viewport={{ once: true, amount: 0.1 }}
 		>
 			<motion.h2 variants={item}>Some Projects I've Made</motion.h2>
+			<ProjectTile
+				image={IMG_Catjack}
+				title="Catjack"
+				description="A cat-themed Blackjack game, Catjack is a spin on your traditional Blackjack game — score as close to 21 and beat the dealer's hand to keep winning, or you risk losing your 9 cat lives!"
+				techstack="JavaScript, React.js, HTML &amp; CSS, Figma"
+				website="https://catjack.netlify.app/"
+				github="https://github.com/ninaespiritu/Catjack"
+			/>
 			<ProjectTile
 				image={IMG_CoffeeIsLife}
 				title="Coffee Is Life Website"
