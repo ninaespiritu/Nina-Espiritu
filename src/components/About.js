@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { container, item } from "./Animations";
 
 const About = () => {
-	
-
 	return (
 		<motion.div
 			id="about"
@@ -23,12 +21,13 @@ const About = () => {
 				problem-solving.
 			</motion.h3>
 			<motion.p variants={item}>
-				I am a recent Software Development Bootcamp graduate, starting
-				my tech career on the Grayce Tech+ Graduate Development
-				Programme which shapes emerging talent into future tech leaders.
-				I am currently on assigment with a multinational technology
-				corporation nationwide to help them implement a high-level
-				software testing strategy.
+				As a Software Development Bootcamp graduate, I started my tech
+				career on the GRAYCE Tech+ Graduate Development Programme which
+				shapes emerging talent into future tech leaders. I am currently
+				embarking on my new adventure as a Junior Software Engineer at
+				the BBC. I am also passionate about supportive initiatives that
+				help bring more women and ethnic minorities into the tech
+				industry.
 			</motion.p>
 			<motion.p variants={item}>
 				Here are some technologies I have been working with:

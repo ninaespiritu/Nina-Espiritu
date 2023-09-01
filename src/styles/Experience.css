@@ -17,7 +17,7 @@
 .work {
   margin: 0 0 48px;
 }
-.job2 p, .job3 p {
+.job2 p, .job3 p, .job4 p, .job5 p {
   margin: 0;
 }
 .work h4 {
@@ -79,6 +79,10 @@
   display: flex;
   justify-content: space-between;
 }
+.job-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .job-toggle {
   margin: 3px 0 0 24px;
   height: 24px;
@@ -101,7 +105,9 @@
 }
 .desc.active1,
 .desc.active2,
-.desc.active3 {
+.desc.active3,
+.desc.active4,
+.desc.active5 {
   padding: 0 0 40px;
   max-height: 1500px;
   width: 100%;
